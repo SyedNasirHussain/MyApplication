@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fast.all.video.downloader.WAStreamVideo">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:layout_height="60dp"
+        android:background="@drawable/pbg">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status Downloader"
+                android:textColor="#1d1d1d"
+                android:layout_centerVertical="true"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/Save"
+                android:layout_width="50dp"
+                android:layout_centerVertical="true"
+                android:layout_height="450dp"
+                android:layout_toLeftOf="@+id/Share"
+                android:background="@drawable/save" />
+
+            <Button
+                android:id="@+id/Share"
+                android:layout_alignParentRight="true"
+                android:layout_width="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/share" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout
+        android:id="@+id/L3"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <VideoView
+        android:id="@+id/streaming_video_laner_rla"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+         />
+    </FrameLayout>
+    <!--<com.google.android.gms.ads.AdView-->
+        <!--android:id="@+id/adView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+       <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--ads:adSize="SMART_BANNER"-->
+        <!--ads:adUnitId="@string/banner_home_footer"></com.google.android.gms.ads.AdView>-->
+
+</RelativeLayout>

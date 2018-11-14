@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.fast.all.video.downloader.videos">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/videos_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adView"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/pbg"
+        android:id="@+id/baar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:id="@+id/button8"
+            android:background="@drawable/button7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="4dp"
+            />
+        <Button
+            android:layout_marginLeft="6dp"
+            android:id="@+id/button7"
+            android:background="@drawable/button4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            />
+        <Button
+            android:layout_marginLeft="6dp"
+            android:id="@+id/button9"
+            android:background="@drawable/button5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+        <Button
+            android:layout_marginLeft="6dp"
+            android:id="@+id/button10"
+            android:background="@drawable/button8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            />
+        <Button
+            android:layout_marginLeft="6dp"
+            android:id="@+id/button11"
+            android:background="@drawable/button9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

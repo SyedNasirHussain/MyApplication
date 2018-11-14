@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_home_footer"></com.google.android.gms.ads.AdView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adView"
+        android:layout_below="@+id/adView2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/ban"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="Our New Application"
+                android:textColor="@android:color/white"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ban_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/ban"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="@string/app_name_playstore"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/app_btn"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/ban_app"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/store_app"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/play_btn"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_alignLeft="@+id/app_btn"
+                android:layout_alignStart="@+id/app_btn"
+                android:layout_below="@+id/app_btn"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/store" />
+
+            <TextView
+                android:id="@+id/playstorebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/play_btn"
+                android:layout_alignBottom="@+id/play_btn"
+                android:layout_marginLeft="3dp"
+                android:layout_toEndOf="@+id/play_btn"
+                android:layout_toRightOf="@+id/play_btn"
+                android:text="PlayStore"
+                android:textColor="@android:color/white"
+                android:textSize="19dp" />
+
+            <Button
+                android:id="@+id/yes_btn"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/play_btn"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/boarder_btn_white"
+                android:text="YES"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/no_btn"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/yes_btn"
+                android:layout_alignBottom="@+id/yes_btn"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/boarder_btn_white"
+                android:text="NO"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_home_footer"></com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

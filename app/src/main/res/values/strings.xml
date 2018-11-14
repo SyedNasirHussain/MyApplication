@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Speedy Video downloader</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_instagram">InstagramActivity</string>
+    <string name="title_activity_insta_video_view">InstaVideoView</string>
+
+    <string name="save_successful_message">Saved To Gallery!</string>
+    <string name="save_error_message">Could not save,Try again later</string>
+    <string name="banner_home_footer">ca-app-pub-6833034376426432/3931865176</string>
+    <string name="interstitial_full_screen">ca-app-pub-6833034376426432/3165578412</string>
+
+    <string name="app_name_playstore">Shield VPN free</string>
+    <string name="app_name_playstore_link">https://play.google.com/store/apps/developer?id=Fun+Apps+Valley</string>
+    <string name="playstore_link">https://play.google.com/store/apps/details?id=com.vpn.unblock.proxy.private.browser.secure</string>
+</resources>

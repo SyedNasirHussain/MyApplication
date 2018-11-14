@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fast.all.video.downloader">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:fullBackupContent="true">
+        <activity android:name="com.fast.all.video.downloader.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.fast.all.video.downloader.InstagramActivity" />
+        <activity android:name="com.fast.all.video.downloader.FaceBookActivity" />
+        <activity android:name="com.fast.all.video.downloader.Dialog" />
+        <activity android:name="com.fast.all.video.downloader.StreamVideo" />
+        <activity android:name="com.fast.all.video.downloader.OtherURl" />
+        <activity android:name="com.fast.all.video.downloader.OtherFB" />
+        <activity android:name="com.fast.all.video.downloader.WhatsApp_Activity" />
+        <activity android:name="com.fast.all.video.downloader.WAStreamVideo" />
+        <activity android:name="com.fast.all.video.downloader.All_Downloads" />
+        <activity android:name="com.fast.all.video.downloader.WAPreviewpix" />
+        <activity android:name="com.fast.all.video.downloader.StartActivity" />
+        <activity android:name="com.fast.all.video.downloader.Download_previewpix" />
+        <activity android:name="com.fast.all.video.downloader.Exit" />
+        <activity android:name=".MainActivity1"/>
+        <activity android:name=".Download"/>
+    </application>
+
+</manifest>
